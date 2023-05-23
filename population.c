@@ -15,14 +15,12 @@ int main(void)
     do
     {
         minpop = get_int("Start size: ");
-    }
-    while (minpop < 9);
+    } while (minpop < 9);
     // TODO: Prompt for end size
     do
     {
         maxpop = get_int("End size: ");
-    }
-    while (maxpop < minpop);
+    } while (maxpop < minpop);
     // TODO: Calculate number of years until we reach threshold
     // Initalize for loop with start of 'Start Size' run loop till 'End Size' reached, update with growth.
     for (int i = minpop; i < maxpop; i += growth)
